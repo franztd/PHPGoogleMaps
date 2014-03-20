@@ -746,7 +746,7 @@ class Map {
 
 	function getStaticMap( $format='png', array $visible = null ) {
 	
-		$url = "http://maps.google.com/maps/api/staticmap?";
+		$url = "https://maps.google.com/maps/api/staticmap?";
 		$request = '';
 		$request .= sprintf( "size=%sx%s&", intval( $this->width ), intval( $this->height ) );
 		$request .= sprintf( "sensor=%s&", $this->sensor ? 'true' : 'false' );
